@@ -42,7 +42,7 @@ function reservarArmario() {
   armarioSorteado.dataEntrega = dataEntrega;
 
   // Depois localizamos o armário emprestado na lista de armarios e mudamos o status do armário.
-  armarios.find(armario => armario.id === armarioSorteado.id).status = false;
+  let armarioEmprestado = armarios.find(armario => armario.id === armarioSorteado.id).status = false;
 
   // Finalmente, mudamos a pendencia do usuário para verdadeira.
   usuario.pendencia = true;
