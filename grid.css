@@ -22,6 +22,7 @@ header {
 .container {
     padding: 16px;
     border-radius: 8px;
+    width: 100%; 
 }
 
 .header-container {
@@ -38,6 +39,7 @@ header {
     border: 2px solid purple;
     padding: 16px;
     margin-bottom: 16px;
+    height: 160px;
 }
 
 .main-content {
@@ -48,7 +50,6 @@ header {
     margin-bottom: 16px;
     border: 2px solid red;
     padding: 16px;
-    height: 300px;
 }
 
 .footer-container {
@@ -59,22 +60,6 @@ header {
 .footer-content {
     border: 2px solid blue;
     padding: 16px;
+    height: 180px;
 }
 
-@media (max-width: 414px) {
-    .header-container {
-        width: 30%;
-    }
-
-    .body-content {
-        margin-bottom: 16px;
-    }
-
-    .main-item {
-        margin-bottom: 16px;
-    }
-
-    .footer-content {
-        margin-bottom: 16px;
-    }
-}
