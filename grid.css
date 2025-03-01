@@ -1,0 +1,81 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    max-width: 414px; /* Largura baseada na tela do iPhone 11 */
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.container {
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.header-container {
+    width: 30%;
+    border: 2px solid green;
+}
+
+.body-container {
+    margin-top: 16px;
+    padding: 16px;
+}
+
+.body-content {
+    border: 2px solid purple;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.main-content {
+    margin-top: 16px;
+}
+
+.main-item {
+    margin-bottom: 16px;
+    border: 2px solid red;
+    padding: 16px;
+}
+
+.footer-container {
+    margin-top: 16px;
+    padding: 16px;
+}
+
+.footer-content {
+    border: 2px solid blue;
+    padding: 16px;
+}
+
+@media (max-width: 414px) {
+    .header-container {
+        width: 30%;
+    }
+
+    .body-content {
+        margin-bottom: 16px;
+    }
+
+    .main-item {
+        margin-bottom: 16px;
+    }
+
+    .footer-content {
+        margin-bottom: 16px;
+    }
+}
