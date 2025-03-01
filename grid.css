@@ -41,16 +41,11 @@ header {
 }
 
 .main-content {
-    width: 100%; 
-    height: 600px; 
-    padding: 32px; 
-    margin-top: 16px; 
-    margin-bottom: 16px; 
-    border: 2px solid red; 
+    margin-top: 16px;
 }
 
-
 .main-item {
+    height: 300px;
     margin-bottom: 16px;
     border: 2px solid red;
     padding: 16px;
