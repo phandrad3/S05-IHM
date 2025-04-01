@@ -31,14 +31,24 @@ class AulasComponent extends HTMLElement {
         <div>
           ${aulasDia.map(a => {
             let provaDisplay = a.prova_alert ? '' : 'display: none;';
+
+            let notaClasse = "";
+                if (a.nota < 6) {
+                    notaClasse = "nota-ruim";
+                } else if (a.nota >= 6 && a.nota < 8) {
+                    notaClasse = "nota-boa";
+                } else {
+                    notaClasse = "nota-otima";
+                }
+                
             return `
-              <div class="comp-aula">
+              <div class="disciplina">
                 <div class="lable-prova p_lable" style="${provaDisplay}">PROVA: <b>${a.prova}</b></div>
                 <div class="titulo_aula">${a.disciplina}</div>
                 <p class="p">Local e Horário: <b>${a.local} - ${a.horario}</b></p>
                 <div class="lables">
                   <div class="lable-frequencia p_lable">FALTAS: <b>${a.frequencia}</b></div>
-                  <div class="lable-nota p_lable">CR: <b>${a.nota}</b></div>
+                  <div class="lable-nota p_lable ${notaClasse}">CR: <b>${a.nota}</b></div>
                 </div>
               </div>
             `;
