@@ -8,8 +8,6 @@
   <title> Dashboard App Inatel </title>
 </head>
 <body>
-  <aulas-component id="componente"></aulas-component>
-  <script src="script_componente.js"></script>
   <div id="menu_aba">
     <div id="menu_bot" onclick="closeMenu(), temaInatel()">Tema Inatel</div>
     <div id="menu_bot" onclick="closeMenu(), temaDark()">Tema Dark</div>
@@ -33,20 +31,8 @@ menu
     </div>
     </div>
       
-    <main class="disciplinas">
-      <div class="disciplina">
-          <h3>Disciplina</h3>
-          <p>Sala e Horário</p>
-      </div>
-      <div class="disciplina">
-          <h3>Disciplina</h3>
-          <p>Sala e Horário</p>
-      </div>
-      <div class="disciplina">
-          <h3>Disciplina</h3>
-          <p>Sala e Horário</p>
-      </div>
-  </main>
+    <aulas-component id="componente"></aulas-component>
+    <script src="script_componente.js"></script>
 
     <section class="noticias">
         <div class="card-noticia">
