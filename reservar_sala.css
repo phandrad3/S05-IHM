@@ -1,0 +1,65 @@
+:root {
+    --cor-click: #126ae2; /* Click */
+    --cor-sombra: #0a599b; /* Azul Escuro */
+    --cor-text: black; /* Preto */
+    --cor-back1: #edf2f4; /* Azul claro */
+    --cor-back2: #6a937a; /* Verde Escuro */
+    
+    --md-sys-color-primary: #126ae2;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #edf2f4;
+    --md-sys-color-on-primary-container: #002020;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      max-width: 414px; /* Largura baseada na tela do iPhone 11 */
+      margin: 0 auto;
+    background-color: var(--cor-back1);
+  }
+  .svg_logo{
+    width: 80px;
+  }
+
+.app-container {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 0 10px #999;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.screen {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.sala, .box {
+  border: 1px solid #aaa;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+}
+
+button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #3f7cf7;
+  color: white;
+}
